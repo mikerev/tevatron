@@ -1,5 +1,7 @@
+# Mess with CrazyMug
 from sopel import module
 import random
+
 
 tardbase = "/home/tevatron/custom_modules/crazytard.txt"
 
