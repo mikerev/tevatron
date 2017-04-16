@@ -19,4 +19,4 @@ def random_state():
                 
 @module.rule('Tevatron')
 def hi(bot, trigger):
-    random_stat()
+    random_state()
