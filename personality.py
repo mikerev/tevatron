@@ -8,7 +8,8 @@ subreddit = reddit.subreddit('chicago')
 random_post_number = random.randint(0,100)
 posts = subreddit.new(limit=100)
 
-def random_state(bot, trigger):
+@module.rule('hello?')
+def hi(bot, trigger):
     for i,post in enumerate(posts):
         if i==random_post_number:
             submission = reddit.submission(id=post.id)
@@ -16,7 +17,3 @@ def random_state(bot, trigger):
                 comments = top_level_comment.body.splitlines()
                 bot.say(random.choice(comments))
                 break
-                
-@module.rule('Tevatron')
-def hi(bot, trigger):
-    random_state()
