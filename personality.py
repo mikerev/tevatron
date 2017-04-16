@@ -8,7 +8,7 @@ subreddit = reddit.subreddit('chicago')
 random_post_number = random.randint(0,100)
 posts = subreddit.new(limit=100)
 
-def random_state():
+def random_state(bot, trigger):
     for i,post in enumerate(posts):
         if i==random_post_number:
             submission = reddit.submission(id=post.id)
