@@ -8,7 +8,7 @@ subreddit = reddit.subreddit('chicago')
 random_post_number = random.randint(0,100)
 posts = subreddit.new(limit=100)
 
-@module.rule('hello?')
+@module.rule('revtest')
 def hi(bot, trigger):
     for i,post in enumerate(posts):
         if i==random_post_number:
