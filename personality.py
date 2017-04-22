@@ -7,7 +7,7 @@ reddit = praw.Reddit(client_id='CLIENTID', client_secret='CLIENTSECRET', user_ag
 
 @module.rule('')
 def hi(bot, trigger):
-    sleep(random.randint(10,900))
+    sleep(random.randint(900,1800))
     subreddit = reddit.subreddit('chicago')
     random_post_number = random.randint(0,100)
     posts = subreddit.new(limit=100)
