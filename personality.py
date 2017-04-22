@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 import praw, random, sys
 from sopel import module
+from time import sleep
 
 reddit = praw.Reddit(client_id='CLIENTID', client_secret='CLIENTSECRET', user_agent='USERAGENT')
 
