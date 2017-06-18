@@ -15,6 +15,6 @@ def tevatron(bot, trigger):
     posts = subreddit.new(limit=100)
     for i,post in enumerate(posts):
         if i==random_post_number:
-        submission = reddit.submission(id=post.id)
-        print submission.comments[0].body
+          submission = reddit.submission(id=post.id)
+          print submission.comments[0].body
 
