@@ -16,5 +16,4 @@ def tevatron(bot, trigger):
     for i,post in enumerate(posts):
         if i==random_post_number:
             submission = reddit.submission(id=post.id)
-            print submission.comments[0].body
-
+            bot.say(trigger.nick + ': ' + submission.comments[0].body)
